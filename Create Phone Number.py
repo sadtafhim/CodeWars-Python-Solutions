@@ -4,6 +4,7 @@
 # create_phone_number([1, 2, 3, 4, 5, 6, 7, 8, 9, 0]) # => returns "(123) 456-7890"
 # The returned format must be correct in order to complete this challenge.
 
+# My Answer
 def create_phone_number(n):
     string1 = "("
     for i in range(len(n)):
@@ -16,4 +17,9 @@ def create_phone_number(n):
         else: 
             string1+=str(n[i])
     return string1
+
+
+# Best Answer
+def create_phone_number(n):
+	return "({}{}{}) {}{}{}-{}{}{}{}".format(*n)
             
